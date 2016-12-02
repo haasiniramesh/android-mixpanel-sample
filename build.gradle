@@ -1,5 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+apply from: 'mad-app-build-config.gradle'
+
 buildscript {
     repositories {
         jcenter()

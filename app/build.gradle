@@ -7,8 +7,8 @@ android {
         applicationId "sura.android.mixpanel.sample"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode version_code
+        versionName "${build_versionMajor}.${build_versionMinor}.${build_versionPatch}.${build_version_number}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,5 +26,11 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
+
+    compile 'com.squareup.dagger:dagger:1.2.+'
+    provided 'com.squareup.dagger:dagger-compiler:1.2.+'
+    compile "com.mixpanel.android:mixpanel-android:4.+"
+    compile "com.google.android.gms:play-services:7.5.0+"
+
     testCompile 'junit:junit:4.12'
 }
