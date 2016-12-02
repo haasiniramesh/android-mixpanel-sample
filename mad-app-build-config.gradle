@@ -1,0 +1,12 @@
+ext {
+    build_versionMajor = 1
+    build_versionMinor = 0
+    build_versionPatch = 0
+
+    // Increment this for every build
+    build_version_number = 0 // Build sequence for the product' iteration
+    // Reset it to 0 when product's major/minor/patch attributes get updated
+
+    // Increment this for every build
+    version_code = 1  // Apk's versionCode. Keeps growing, no reset
+}
